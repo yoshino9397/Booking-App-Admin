@@ -1,13 +1,13 @@
-const express = require("express");
-const dotenv = require("dotenv");
-const mongoose = require("mongoose");
-const authRoute = require("./routes/auth");
-const usersRoute = require("./routes/user");
-const hotelsRoute = require("./routes/hotels");
-const roomsRoute = require("./routes/rooms");
-const cookieParser = require("cookie-parser");
-const cors = require("cors");
-const path = require("path");
+import express from "express";
+import dotenv from "dotenv";
+import mongoose from "mongoose";
+import authRoute from "./routes/auth.js";
+import usersRoute from "./routes/users.js";
+import hotelsRoute from "./routes/hotels.js";
+import roomsRoute from "./routes/rooms.js";
+import cookieParser from "cookie-parser";
+import cors from "cors";
+import path from "path";
 
 const app = express();
 dotenv.config();
@@ -51,8 +51,8 @@ app.listen(process.env.PORT || 8800, () => {
   console.log("Connected to backend!");
 });
 
-app.use(express.static(path.join(__dirname, "/client/build")));
+app.use(express.static(path.join(__dirname, "/client/public")));
 
 app.get("*", (req, res) => {
-  res.sendFile(path.join(__dirname, "/client/build", "index.html"));
+  res.sendFile(path.join(__dirname, "/client/public", "index.html"));
 });

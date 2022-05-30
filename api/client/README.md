@@ -57,3 +57,11 @@ git commit -am "my first commit"
 ```bash
 git push heroku HEAD:master
 ```
+
+```bash
+Check Point
+1,ONLY api not Readme
+2,npm i path
+3,config path
+4,proxy deleted
+```
