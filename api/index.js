@@ -1,13 +1,13 @@
-import express from "express";
-import dotenv from "dotenv";
-import mongoose from "mongoose";
-import authRoute from "./routes/auth.js";
-import usersRoute from "./routes/users.js";
-import hotelsRoute from "./routes/hotels.js";
-import roomsRoute from "./routes/rooms.js";
-import cookieParser from "cookie-parser";
-import cors from "cors";
-import path from "path";
+const express = require("express");
+const dotenv = require("dotenv");
+const mongoose = require("mongoose");
+const authRoute = require("./routes/auth");
+const usersRoute = require("./routes/user");
+const hotelsRoute = require("./routes/hotels");
+const roomsRoute = require("./routes/rooms");
+const cookieParser = require("cookie-parser");
+const cors = require("cors");
+const path = require("path");
 
 const app = express();
 dotenv.config();
