@@ -64,4 +64,5 @@ Check Point
 2,npm i path
 3,config path
 4,proxy deleted
+5,use const not import
 ```
