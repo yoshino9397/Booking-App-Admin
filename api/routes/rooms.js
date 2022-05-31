@@ -24,4 +24,4 @@ router.get("/:id", getRoom);
 //GET ALL
 router.get("/", getRooms);
 
-export default router;
+module.exports = router;
