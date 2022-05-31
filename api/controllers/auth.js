@@ -1,7 +1,7 @@
-import User from "../models/User.js";
-import bcrypt from "bcryptjs";
-import jwt from "jsonwebtoken";
-import { createError } from "../utils/error.js";
+const User = require("../models/User.js");
+const bcrypt = require("bcryptjs");
+const jwt = require("jsonwebtoken");
+const { createError } = require("../utils/error.js");
 
 export const register = async (req, res, next) => {
   try {

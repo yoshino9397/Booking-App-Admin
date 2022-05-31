@@ -1,4 +1,4 @@
-import mongoose from "mongoose";
+const mongoose = require("mongoose");
 const RoomSchema = new mongoose.Schema(
   {
     title: {

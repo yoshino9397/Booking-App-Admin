@@ -1,4 +1,4 @@
-import User from "../models/User.js";
+const User =require("../models/User")
 
 export const updateUser = async (req, res, next) => {
   try {
